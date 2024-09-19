@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SVG</title>
+
+    <style>
+        svg{
+            border: 2px solid green;
+            border-radius: 20px;
+        }
+
+        button{
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>SVG Elements</h1>
+
+    <svg width="500" height="400" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow" >
+            <animate
+            attributeName="cx"
+            begin="0s"
+            dur="8s"
+            from="50"
+            to="90%"
+            repeatCount="indefinite" />
+
+         </circle>
+        <rect id="rect" width="150" height="80" x="100" y="150" rx="20" ry="15" stroke="blue" stroke-width="4" fill="red"/>
+    </svg>
+
+    <svg width="500" height="400" xmlns="http://www.w3.org/2000/svg">
+        <a href="https://www.w3schools.com/nodejs/">
+        <circle cx="50" cy="50" r="40" stroke="lightgreen" stroke-width="4" fill="pink" />
+        <image height="100" width="100" href="./Img/node-js-svgrepo-com.svg" />
+        </a>
+
+        <a href="https://www.w3schools.com/REACT/DEFAULT.ASP">
+            <circle cx="200" cy="50" r="40" stroke="orange" stroke-width="4" fill="black" />
+            <image x="170" y="15" height="50" width="60" href="./Img/react-svgrepo-com.svg" />
+            <text x="173" y="75" fill="blue">React JS</text>
+        </a>
+
+        <a href="https://www.w3schools.com/mongodb/">
+            <circle cx="350" cy="53" r="50" stroke="orange" stroke-width="4" fill="black" />
+            <image x="281" y="31" height="40" width="60" href="./Img/mongo-svgrepo-com.svg" />
+            <text x="320" y="55" fill="lightgreen">Mongo DB</text>
+        </a>
+    </svg>
+<br>
+
+    <button onClick="increase()">Width ++</button>
+    <button onClick="decrease()">Width --</button>
+
+    <script src="./main.js"></script>
+</body>
+</html>
